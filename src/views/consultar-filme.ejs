@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<% include ./head %>
+	</head>
+
+	<body>
+
+		<% include ./header %>
+
+			<form class="form-cadastro" action="/cadastrar" method="POST">
+			
+				
+				<div class="form-group">
+					<label for="titulo" class="col-sm-2 col-form-label">Título</label>
+					<input type="name" value="Vingadores Guerra Infinita" class="form-control" id="titulo" name="titulo" placeholder="Título" required>
+				</div>			
+				
+				<div class="form-group">
+					<label for="Genero" class="col-sm-2 col-form-label">Genero</label>
+					<input type="text" value="Ação" class="form-control" id="Genero" name="Genero" placeholder="Genero" required>
+				</div>					
+			
+				<div class="form-group row">
+					<button type="submit" class="btn btn-primary">Buscar</button>
+				</div>
+				
+				<form>
+					<div class="form-group">
+					  
+					  <label for="sel2">Filmes Cadastrados:</label>
+					  <select multiple class="form-control" id="sel2">
+						<option>1. Vingadores Guerra Infinita</option>
+						<option>2. Star Wars os ultimos Jedi</option>
+						<option>3. Animais Fantasticos os crimes em Grindelwald</option>
+					  </select>
+					</div>
+				</form>
+			  
+					  <div class="form-group row">
+						  <button type="submit" class="btn btn-primary">Consultar</button>
+						  <button type="submit" class="btn btn-warning">Editar</button>
+						  <button type="submit" class="btn btn-danger">Excluir</button>
+					  </div>
+
+		  </form>
+			</form>
+					
+	   <% include ./footer %>

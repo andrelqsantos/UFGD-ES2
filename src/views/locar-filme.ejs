@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<% include ./head %>
+	</head>
+
+	<body>
+
+		<% include ./header %>
+
+			<form class="form-cadastro" action="/cadastrar" method="POST">
+			
+				
+						<div class="form-group">
+						  
+						  <label for="sel2">Clientes Cadastrados:</label>
+						  <select multiple class="form-control" id="sel2">
+							<option>André Luiz Queiroz - 111.111.111.11</option>
+							<option>Cristian Medina - 222.222.222-22</option>
+							<option>Lucas Soares - 333.333.333-33</option>
+							<option>Enmory - 444.444.444-44</option>
+						  </select>
+						</div>
+							
+
+					<div class="form-group">
+						  
+						<label for="sel2">Filmes Cadastrados:</label>
+					    <select multiple class="form-control" id="sel2">
+							<option>1. Vingadores Guerra Infinita</option>
+							<option>2. Star Wars os ultimos Jedi</option>
+							<option>3. Animais Fantasticos os crimes em Grindelwald</option>
+						</select>
+					</div>
+					
+
+					<div class="col-sm-6 form-group">
+						<label for="d1" class="col-sm-6 col-form-label">Data de locação</label>
+						<input type="date"  class="form-control" id="d1" name="d1" required>
+					</div>	
+
+					<div class="col-sm-6 form-group">
+						<label for="d2" class="col-sm-6 col-form-label">Data de devolução</label>
+						<input type="date" class="form-control" id="d2" name="d2"  required>
+					</div>	
+			
+					<div class="col-sm-2 form-group">
+						<label for="preco" class="col-sm-2 col-form-label">Preço</label>
+						<input type="text" value="R$: 25,00" class="form-control" id="preco" name="preco" required>
+					</div>
+					
+					<div class="col-sm-12 form-group">
+						<button type="submit" class="btn btn-primary">Confirmar locação</button>		
+					</div>
+								
+							
+					
+			</form>
+					
+	   <% include ./footer %>
